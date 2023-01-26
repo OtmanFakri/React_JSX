@@ -1,13 +1,19 @@
-import {useState} from "react"
-import {Navbar} from "./components/NavBar";
+import {useState, useRef} from "react"
+import {Navbar, Hero, Services} from "./components/index.jsx";
+
 
 function App() {
-
 
     return (
         <>
             {/* NavBar */}
-            <Navbar></Navbar>
+            <Navbar/>
+
+            <Hero/>
+
+            <Services/>
+
+
         </>
     )
 }
