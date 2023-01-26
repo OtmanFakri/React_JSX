@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import './App.css'
+import {useState, useRef} from "react"
+import {Navbar, Hero, Services} from "./components/index.jsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div>
-        <h1 className="text-3xl text-center font-bold underline">
-            Hello world!
-        </h1>
-    </div>
-  )
+    return (
+        <>
+            {/* NavBar */}
+            <Navbar/>
+
+            <Hero/>
+
+            <Services/>
+
+
+        </>
+    )
 }
 
 export default App
